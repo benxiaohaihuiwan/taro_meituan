@@ -1,0 +1,4 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="cata"><text bindtap="clickHandle" class="{{'cata_name ' + (selectCata && selectCata.id == item.id ? 'select' : '')}}" wx:key="id" wx:for="{{cata}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item}}">{{item.name}}</text>
+    </view>
+</block>

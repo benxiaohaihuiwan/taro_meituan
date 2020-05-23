@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import Index from './pages/index'
 import Head from '../../components/head/head.js'
+import Food from '../../components/food/food.js'
 import './app.css'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -22,6 +23,7 @@ class App extends Component {
   config = {
     pages: [
       'components/head/head',
+      'components/food/food',
       'pages/index/index'
     ],
     window: {
@@ -36,7 +38,11 @@ class App extends Component {
   // 请勿修改此函数
   render () {
     return (
-      <Head />
+      <View>
+         <Head />
+         <Food />
+      </View>
+     
     )
   }
 }

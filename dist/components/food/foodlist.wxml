@@ -1,0 +1,12 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="foodlist"><text>{{selectCata ? selectCata.name : ""}}</text>
+        <view class="foodlist_forlist">
+            <view wx:key="id" class="foodlist_item" wx:for="{{loopArray6}}" wx:for-item="item" wx:for-index="index">
+                <image class="foodlist_item_img" src="{{item.$loopState__temp2}}"></image>
+                <view class="foodlist_item_info"><text>{{item.$original.title}}</text><text>月售:{{item.$original.sole}}</text><text class="price">¥{{item.$original.price}}</text>
+                    <add-cut compid="{{item.$compid__7}}"></add-cut>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
