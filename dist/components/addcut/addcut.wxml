@@ -1,6 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="addcut">
-        <image bindtap="CutFood" class="{{'opeate_img ' + hideClass}}" src="{{anonymousState__temp}}" data-e-tap-so="this"></image><text class="{{'food_num ' + hideClass}}">{{Num}}</text>
-        <image bindtap="AddFood" class="opeate_img" src="{{anonymousState__temp2}}" data-e-tap-so="this"></image>
-    </view>
-</block>

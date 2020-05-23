@@ -1,4 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="activity"><text class="type">{{anonymousState__temp}}</text><text>{{anonymousState__temp2}}</text><text class="length">{{activity.length}}个活动</text>
-    </view>
-</block>
