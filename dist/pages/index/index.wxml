@@ -1,0 +1,5 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index">
+        <button bindtap="click" data-e-tap-so="this">改变名字333</button><text>{{name}}</text>
+    </view>
+</block>
